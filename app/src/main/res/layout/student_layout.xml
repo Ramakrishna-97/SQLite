@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/l1"
+    android:background="#D8D8D6"
+
+    android:layout_height="400dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Student Details"
+
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:id="@+id/displaytxt"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:textSize="24dp"
+        android:hint="Student Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+    />
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:textSize="24dp"
+
+        android:hint="Student Mail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" />
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:hint="Student ID"
+        android:textSize="24dp"
+        android:inputType="number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Insert"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="insert"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

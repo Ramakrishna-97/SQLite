@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/displayheader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SQLITE DATA BASE"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:background="#FF9800"
+        android:padding="10dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:id="@+id/spinner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:background="#E6ECEB"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/student_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/teacher_layout"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="next"
+        android:onClick="Next"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        />
+
+</LinearLayout>
